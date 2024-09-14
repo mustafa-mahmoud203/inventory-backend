@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                      // الهدف من الترجمة إلى JavaScript. ES2020 يضمن دعم الميزات الحديثة.
+    "module": "commonjs",                    // نوع الوحدة المستخدمة في التصدير والاستيراد.
+    "moduleResolution": "node",              // طريقة حل الوحدات، يمكن استخدام "node" لمشاريع Node.js.
+    "outDir": "./dist",                      // المجلد الذي سيتم وضع الملفات المترجمة فيه.
+    "rootDir": "./src",                      // المجلد الجذر للملفات المصدرية.
+    "strict": true,                          // تمكين جميع خيارات التحقق الصارمة.
+    "esModuleInterop": true,                 // تمكين التوافق مع وحدات ES.
+    "skipLibCheck": true,                    // تخطي فحص مكتبات الأطراف الثالثة لتحسين سرعة البناء.
+    "forceConsistentCasingInFileNames": true // إجبار التناسق في أحرف أسماء الملفات.
+  },
+  "include": [
+    "src/**/*.ts"  // تضمين جميع ملفات TypeScript في مجلد src.
+  ],
+  "exclude": [
+    "node_modules",  // استبعاد مجلد node_modules من الترجمة.
+    "**/*.spec.ts"   // استبعاد ملفات الاختبار.
+  ]
+}
